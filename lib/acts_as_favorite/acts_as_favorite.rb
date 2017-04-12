@@ -65,9 +65,7 @@ module ActsAsFavorite
         # ACA: The original plugin did not incoorporate the user id. This
         # meant that the has_many associations did not find favorites
         # properly.
-        Favorite.find( :first,
-                       :conditions => [ 'user_id = ? AND favorable_type = ? AND favorable_id = ?',
-                                         self.id, favorite_obj.class.to_s, favorite_obj.id ] )
+        Favorite.find_by(user_id: self.id, favorable_type: favorite_obj.class.to_s, favorable_id: favorite_obj.id)
       end
     end
   end
