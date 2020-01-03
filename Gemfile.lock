@@ -1,0 +1,17 @@
+PATH
+  remote: .
+  specs:
+    acts_as_favorite (0.1.0)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  acts_as_favorite!
+
+BUNDLED WITH
+   2.0.2
